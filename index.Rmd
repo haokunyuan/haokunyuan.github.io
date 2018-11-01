@@ -1,5 +1,9 @@
 ---
 title: "Welcome!"
+output:
+  html_document: 
+    toc: true
+    toc_float: true
 ---
 
 ### About me
@@ -9,4 +13,4 @@ Hi, I'm *Haokun Yuan*. A first year Master student at *Mailman School of Public 
 
 ### flexdashboard
 
-This is a flexdashboard I create with [instacart] data.
+This is a flexdashboard I create with [instacart]() data.
