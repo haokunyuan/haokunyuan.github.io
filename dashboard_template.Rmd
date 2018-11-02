@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Instacart Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -13,14 +13,14 @@ library(viridis)
 library(p8105.datasets)
 library(plotly)
 
-instacart= instacart %>% 
+instacart = instacart %>% 
   janitor::clean_names()
 ```
 
-Column {data-width=650}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart A
+### Number of order in each department
 
 ```{r}
 instacart %>% 
@@ -29,10 +29,10 @@ instacart %>%
   plot_ly(x = ~department, y = ~n ,color = ~department, type = "bar")
 ```
 
-Column {data-width=350}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart B
+### Number of order changes during a day
 
 ```{r}
 instacart %>% 
@@ -40,7 +40,7 @@ instacart %>%
   plot_ly(x = ~order_hour_of_day, y = ~n, type = "scatter", mode = "line")
 ```
 
-### Chart C
+### Number of orders of produce in a day
 
 ```{r}
 instacart %>% 
