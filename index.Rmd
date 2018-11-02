@@ -12,7 +12,7 @@ Hi, I'm *Haokun Yuan*. A first year Master student at *Mailman School of Public 
 
 ### Resume
 
-Here is my [resume](document/resume_hy2580.pdf).
+You can download my [resume](resume_hy2580.pdf).
 
 
 ### Flexdashboard
