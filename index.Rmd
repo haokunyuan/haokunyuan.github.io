@@ -8,9 +8,9 @@ output:
 
 ### About me
 
-Hi, I'm *Haokun Yuan*. A first year Master student at *Mailman School of Public Health, Columbia University*, studying *Biostatistics*. More information on my academic and professional experiences can be accessed from my [resume]()
+Hi, I'm *Haokun Yuan*. A first year Master student at *Mailman School of Public Health, Columbia University*, studying *Biostatistics*. More information on my academic and professional experiences can be accessed from my [resume](resume_Yuan_Haokun copp.docx)
 
 
 ### flexdashboard
 
-This is a flexdashboard I create with [instacart]() data.
+This is a flexdashboard I create with [instacart](dashboard_template.html) data.

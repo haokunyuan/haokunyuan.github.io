@@ -8,6 +8,13 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+
+instacart= instacart %>% 
+  janitor::clean_names()
 ```
 
 Column {data-width=650}
@@ -16,7 +23,10 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+instacart %>% 
+  count(department) %>% 
+  mutate(department = fct_reorder(department,n)) %>% 
+  plot_ly(x = ~department, y = ~n ,color = ~department, type = "bar")
 ```
 
 Column {data-width=350}
@@ -25,11 +35,16 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+instacart %>% 
+  count(order_hour_of_day) %>% 
+  plot_ly(x = ~order_hour_of_day, y = ~n, type = "scatter", mode = "line")
 ```
 
 ### Chart C
 
 ```{r}
-
+instacart %>% 
+  filter(department == "produce") %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~aisle, type = "box",
+          colors = "Set2")
 ```
