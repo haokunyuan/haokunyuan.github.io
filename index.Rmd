@@ -10,10 +10,6 @@ output:
 
 Hi, I'm *Haokun Yuan*. A first year Master student at *Mailman School of Public Health, Columbia University*, studying *Biostatistics*. More information on my academic and professional experiences can be accessed from my resume.
 
-### Resume
-
-You can download my [resume](resume_hy2580.pdf).
-
 
 ### Flexdashboard
 
